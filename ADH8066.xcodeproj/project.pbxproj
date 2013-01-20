@@ -1,0 +1,333 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		D7377EEA16ACB924006E50DF /* Compile */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D7377EFA16ACB924006E50DF /* Build configuration list for PBXAggregateTarget "Compile" */;
+			buildPhases = (
+				D7377EE916ACB924006E50DF /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Compile;
+			productName = Compile;
+		};
+		D7377EEC16ACB924006E50DF /* Upload Duemilanove */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D7377EFD16ACB924006E50DF /* Build configuration list for PBXAggregateTarget "Upload Duemilanove" */;
+			buildPhases = (
+				D7377EEB16ACB924006E50DF /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Upload Duemilanove";
+			productName = "Upload Duemilanove";
+		};
+		D7377EEE16ACB924006E50DF /* Upload Uno */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D7377F0016ACB924006E50DF /* Build configuration list for PBXAggregateTarget "Upload Uno" */;
+			buildPhases = (
+				D7377EED16ACB924006E50DF /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Upload Uno";
+			productName = "Upload Uno";
+		};
+		D7377EF016ACB924006E50DF /* Upload Nano */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D7377F0316ACB924006E50DF /* Build configuration list for PBXAggregateTarget "Upload Nano" */;
+			buildPhases = (
+				D7377EEF16ACB924006E50DF /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Upload Nano";
+			productName = "Upload Nano";
+		};
+		D7377EF216ACB924006E50DF /* Clean */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D7377F0616ACB924006E50DF /* Build configuration list for PBXAggregateTarget "Clean" */;
+			buildPhases = (
+				D7377EF116ACB924006E50DF /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Clean;
+			productName = Clean;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXFileReference section */
+		D7377EF416ACB924006E50DF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D7377EF516ACB924006E50DF /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		D7377EF716ACB924006E50DF /* aDocument */ = {isa = PBXFileReference; lastKnownFileType = text; name = aDocument; path = Documentation/aDocument; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		D7377EE216ACB924006E50DF = {
+			isa = PBXGroup;
+			children = (
+				D7377EF316ACB924006E50DF /* ADH8066 */,
+			);
+			sourceTree = "<group>";
+		};
+		D7377EF316ACB924006E50DF /* ADH8066 */ = {
+			isa = PBXGroup;
+			children = (
+				D7377EF416ACB924006E50DF /* main.cpp */,
+				D7377EF516ACB924006E50DF /* Makefile */,
+				D7377EF616ACB924006E50DF /* Documentation */,
+			);
+			path = ADH8066;
+			sourceTree = "<group>";
+		};
+		D7377EF616ACB924006E50DF /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				D7377EF716ACB924006E50DF /* aDocument */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		D7377EE416ACB924006E50DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = D7377EE716ACB924006E50DF /* Build configuration list for PBXProject "ADH8066" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D7377EE216ACB924006E50DF;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7377EEA16ACB924006E50DF /* Compile */,
+				D7377EEC16ACB924006E50DF /* Upload Duemilanove */,
+				D7377EEE16ACB924006E50DF /* Upload Uno */,
+				D7377EF016ACB924006E50DF /* Upload Nano */,
+				D7377EF216ACB924006E50DF /* Clean */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D7377EE916ACB924006E50DF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake compile\nexit 0";
+		};
+		D7377EEB16ACB924006E50DF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake BOARD=\"atmega328\" upload\nexit 0";
+		};
+		D7377EED16ACB924006E50DF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake BOARD=\"uno\" upload\nexit 0";
+		};
+		D7377EEF16ACB924006E50DF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake BOARD=\"nano328\" upload\nexit 0";
+		};
+		D7377EF116ACB924006E50DF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake clean\nexit 0";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D7377EF816ACB924006E50DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		D7377EF916ACB924006E50DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		D7377EFB16ACB924006E50DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D7377EFC16ACB924006E50DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D7377EFE16ACB924006E50DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D7377EFF16ACB924006E50DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D7377F0116ACB924006E50DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D7377F0216ACB924006E50DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D7377F0416ACB924006E50DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D7377F0516ACB924006E50DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D7377F0716ACB924006E50DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D7377F0816ACB924006E50DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7377EE716ACB924006E50DF /* Build configuration list for PBXProject "ADH8066" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7377EF816ACB924006E50DF /* Debug */,
+				D7377EF916ACB924006E50DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7377EFA16ACB924006E50DF /* Build configuration list for PBXAggregateTarget "Compile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7377EFB16ACB924006E50DF /* Debug */,
+				D7377EFC16ACB924006E50DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D7377EFD16ACB924006E50DF /* Build configuration list for PBXAggregateTarget "Upload Duemilanove" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7377EFE16ACB924006E50DF /* Debug */,
+				D7377EFF16ACB924006E50DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D7377F0016ACB924006E50DF /* Build configuration list for PBXAggregateTarget "Upload Uno" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7377F0116ACB924006E50DF /* Debug */,
+				D7377F0216ACB924006E50DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D7377F0316ACB924006E50DF /* Build configuration list for PBXAggregateTarget "Upload Nano" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7377F0416ACB924006E50DF /* Debug */,
+				D7377F0516ACB924006E50DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D7377F0616ACB924006E50DF /* Build configuration list for PBXAggregateTarget "Clean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7377F0716ACB924006E50DF /* Debug */,
+				D7377F0816ACB924006E50DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7377EE416ACB924006E50DF /* Project object */;
+}

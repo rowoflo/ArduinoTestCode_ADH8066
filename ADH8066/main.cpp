@@ -37,6 +37,8 @@ String textMsgStr = "Hello from cell library";
 // Setup Function - Initializes Arduino
 //------------------------------------------------------------------------------
 void setup() {
+    cell.initialize();
+    
 	Serial.begin(9600);
     Serial.println("======== ADH8066 Test Program ========");
     printMenu();

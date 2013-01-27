@@ -67,7 +67,14 @@
 /* Begin PBXFileReference section */
 		D7377EF416ACB924006E50DF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		D7377EF516ACB924006E50DF /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		D7377EF716ACB924006E50DF /* aDocument */ = {isa = PBXFileReference; lastKnownFileType = text; name = aDocument; path = Documentation/aDocument; sourceTree = "<group>"; };
+		D7377F0B16ACF79D006E50DF /* ADH8066.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ADH8066.cpp; path = ../../../libraries/ADH8066/ADH8066.cpp; sourceTree = "<group>"; };
+		D7377F0C16ACF79D006E50DF /* ADH8066.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ADH8066.h; path = ../../../libraries/ADH8066/ADH8066.h; sourceTree = "<group>"; };
+		D7C6AC1816B4C94B0058BBD1 /* ADH8066 AT Commands V16.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "ADH8066 AT Commands V16.pdf"; path = "Documentation/ADH8066 AT Commands V16.pdf"; sourceTree = "<group>"; };
+		D7C6AC1916B4C94B0058BBD1 /* ADH8066 Enhanced AT Command V1.6.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "ADH8066 Enhanced AT Command V1.6.pdf"; path = "Documentation/ADH8066 Enhanced AT Command V1.6.pdf"; sourceTree = "<group>"; };
+		D7C6AC1A16B4C94B0058BBD1 /* ADH8066 Manual V16.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "ADH8066 Manual V16.pdf"; path = "Documentation/ADH8066 Manual V16.pdf"; sourceTree = "<group>"; };
+		D7C6AC1B16B4C94B0058BBD1 /* FTP AT Commands.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "FTP AT Commands.pdf"; path = "Documentation/FTP AT Commands.pdf"; sourceTree = "<group>"; };
+		D7C6AC1C16B4C94B0058BBD1 /* FTP AT Supplemental.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "FTP AT Supplemental.pdf"; path = "Documentation/FTP AT Supplemental.pdf"; sourceTree = "<group>"; };
+		D7C6AC1D16B4C94B0058BBD1 /* GSM-GPRS Software Development Guide.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "GSM-GPRS Software Development Guide.pdf"; path = "Documentation/GSM-GPRS Software Development Guide.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -82,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				D7377EF416ACB924006E50DF /* main.cpp */,
+				D7377F0C16ACF79D006E50DF /* ADH8066.h */,
+				D7377F0B16ACF79D006E50DF /* ADH8066.cpp */,
 				D7377EF516ACB924006E50DF /* Makefile */,
 				D7377EF616ACB924006E50DF /* Documentation */,
 			);
@@ -91,7 +100,12 @@
 		D7377EF616ACB924006E50DF /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
-				D7377EF716ACB924006E50DF /* aDocument */,
+				D7C6AC1816B4C94B0058BBD1 /* ADH8066 AT Commands V16.pdf */,
+				D7C6AC1916B4C94B0058BBD1 /* ADH8066 Enhanced AT Command V1.6.pdf */,
+				D7C6AC1A16B4C94B0058BBD1 /* ADH8066 Manual V16.pdf */,
+				D7C6AC1B16B4C94B0058BBD1 /* FTP AT Commands.pdf */,
+				D7C6AC1C16B4C94B0058BBD1 /* FTP AT Supplemental.pdf */,
+				D7C6AC1D16B4C94B0058BBD1 /* GSM-GPRS Software Development Guide.pdf */,
 			);
 			name = Documentation;
 			sourceTree = "<group>";
@@ -136,7 +150,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake compile\nexit 0";
+			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake compile";
 		};
 		D7377EEB16ACB924006E50DF /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -149,7 +163,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake BOARD=\"atmega328\" upload\nexit 0";
+			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake BOARD=\"atmega328\" upload";
 		};
 		D7377EED16ACB924006E50DF /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -162,7 +176,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake BOARD=\"uno\" upload\nexit 0";
+			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake BOARD=\"uno\" upload";
 		};
 		D7377EEF16ACB924006E50DF /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -175,7 +189,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake BOARD=\"nano328\" upload\nexit 0";
+			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake BOARD=\"nano328\" upload";
 		};
 		D7377EF116ACB924006E50DF /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -188,7 +202,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake clean\nexit 0";
+			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake clean";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -294,6 +308,7 @@
 				D7377EFC16ACB924006E50DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7377EFD16ACB924006E50DF /* Build configuration list for PBXAggregateTarget "Upload Duemilanove" */ = {
 			isa = XCConfigurationList;
@@ -302,6 +317,7 @@
 				D7377EFF16ACB924006E50DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7377F0016ACB924006E50DF /* Build configuration list for PBXAggregateTarget "Upload Uno" */ = {
 			isa = XCConfigurationList;
@@ -310,6 +326,7 @@
 				D7377F0216ACB924006E50DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7377F0316ACB924006E50DF /* Build configuration list for PBXAggregateTarget "Upload Nano" */ = {
 			isa = XCConfigurationList;
@@ -318,6 +335,7 @@
 				D7377F0516ACB924006E50DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7377F0616ACB924006E50DF /* Build configuration list for PBXAggregateTarget "Clean" */ = {
 			isa = XCConfigurationList;
@@ -326,6 +344,7 @@
 				D7377F0816ACB924006E50DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

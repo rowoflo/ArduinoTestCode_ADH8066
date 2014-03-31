@@ -268,10 +268,10 @@ $(arduinoStaticLibDir)/arduino.a : $(arduinoObjs)
 
 # Implicit pattern rules for files ----------------------------------------------
 %.o : %.c %.h
-	$(CC) $(arduinoIncs) $(CFLAGS) -c $< -o $@
+	$(CC) $(arduinoIncs) $(userIncs) $(CFLAGS) -c $< -o $@
 
 %.o : %.cpp %.h
-	@$(CPP) $(arduinoIncs) $(CPPFLAGS) -c $< -o $@
+	@$(CPP) $(arduinoIncs) $(userIncs) $(CPPFLAGS) -c $< -o $@
 	
 %.h : %.cpp
 
@@ -340,4 +340,4 @@ $(arduinoLibDir)/$(arduinoObjDirName)/%.o : %.cpp
 
 # Debug target ------------------------------------------------------------------
 debug :
-	@echo $(mcu)
+	@echo $(userIncs)
